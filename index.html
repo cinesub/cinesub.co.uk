@@ -13,88 +13,101 @@
 </head>
 
 <body>
-<div align="center">
-<pre>
-          _                       _     
-         (_)                     | |    
+<div id="wrapper">
+	<strong><pre>
+	  _                       _     
+	 (_)                     | |    
       ___ _ _ __   ___  ___ _   _| |__  
      / __| | '_ \ / _ \/ __| | | | '_ \ 
     | (__| | | | |  __/\__ \ |_| | |_) |
      \___|_|_| |_|\___||___/\__,_|_.__/ 
-Accessible movie subtitles with TTS
+Accessible movie subtitles with text to speech (TTS)
     Langs: {en, fr, de, es, it}
 =========================================
-</pre>
-<div id="buttons">
-		<a href="http://cinesub.co.uk/">
-			<div id="app">
-			</div>
-		</a>
-		<a href="https://github.com/cinesub">
-			<div id="git">
-			</div>
-		</a>   
-		<a href="http://vhackandroid.wikia.com/wiki/CineSub" target="_blank">
-			<div id="wiki">
-			</div>
-		</a>  
-		<a href="https://twitter.com/cinesub" target="_blank">
-			<div id="twitter">
-			</div>
-		</a>
+	</pre>
+	</strong>
+		<div class="buttons">
+				<a href="http://cinesub.co.uk/">
+					<div id="app">
+					<p>&nbsp;<p>
+					<p>&nbsp;<p>
+					<p>app<p>
+					</div>
+				</a>
+				<a href="https://github.com/cinesub">
+					<div id="git">
+					<p>&nbsp;<p>
+					<p>&nbsp;<p>
+					<p>github<p>
+					</div>
+				</a>   
+				<a href="http://vhackandroid.wikia.com/wiki/CineSub" target="_blank">
+					<div id="wiki">
+					<p>&nbsp;<p>
+					<p>&nbsp;<p>
+					<p>wikia<p>
+					</div>
+				</a>  
+				<a href="https://twitter.com/cinesubapp" target="_blank">
+					<div id="twitter">
+					<p>&nbsp;<p>
+					<p>&nbsp;<p>
+					<p>@cinesubapp<p>
+					</div>
+				</a>
+		</div>
+	<p>&nbsp;<p>
+	<h2>What is CineSub App?</h2>
+	<p>Accessible movie subtitles with text to speech (TTS)</p>
+	<h2>How to Use CineSub App</h2>
+	<p>1. Go to: http://www.cinesub.co.uk/</p>
+	<p>2. Download the Client and Server ADK</p>
+	<p>3. Start the Server on the Tv</p>
+	<p>4. Start the Client on the Tablet and the Phone.</p>
+	<p>5. On the Phone or Tablet (client), scan the QR Code on the TV (server)</p>
+	<p>6. Choose your Desired Subtitle and TTS Language:</p>
+	<div class="buttons2">
+			<a href="images/en.png">
+				<div id="en">
+				<p>&nbsp;<p>
+				<p>&nbsp;<p>
+				<p>en<p>
+				</div>
+			</a>
+			<a href="images/es.png">
+				<div id="es">
+				<p>&nbsp;<p>
+				<p>&nbsp;<p>
+				<p>es<p>
+				</div>
+			</a>   
+			<a href="images/fr.png">
+				<div id="fr">
+				<p>&nbsp;<p>
+				<p>&nbsp;<p>
+				<p>fr<p>
+				</div>
+			</a>  
+			<a href="images/de.png">
+				<div id="de">
+				<p>&nbsp;<p>
+				<p>&nbsp;<p>
+				<p>de<p>
+				</div>
+			</a>
+			<a href="images/it.png">
+				<div id="it">
+				<p>&nbsp;<p>
+				<p>&nbsp;<p>
+				<p>it<p>
+				</div>
+			</a>
+	</div>
+	<p>7. Choose the Movie with the TV remote control, highlight and select to begin playback.</p>
+	<p>8. Our server will now automagically update your tablet and phone with SRT subtitles in the language you have chosen
+	<p>9. If enabled, these subtitles will also be read out using the Android Text To Speech API (TTS) Enjoy ^_^</p>
+	<p>N.B. Using the app is a bit like having a babel fish in your ear so it takes some getting used to.</p>
 </div>
-<h1>How to Use the app</h1>
-    <div id="info">
-<a href="#" class="btn large" onclick="scan();">Scan</a>
-<p>Go to: http://www.cinesub.co.uk/</p>
-<p>Download the Client and Server ADK</p>
-<p>Start the Server on the Tv</p>
-<p>Start the Client on the Tablet and the Phone.</p>
-<p>*&#039;Pair&#039; to the TV</p>
-<p>*Choose your Desired Subtitle Language</p>
-<p>**en</p><img src="images/en.png" height="200px" />
-<p>**es</p><img src="images/es.png" height="200px" />
-<p>**fr</p><img src="images/fr.png" height="200px" />
-<p>**de</p><img src="images/de.png" height="200px" />
-<p>**it</p><img src="images/it.png" height="200px" />
-<p>*Option opt-out of TTS (Text to Speech). Wea a headphone earbud to hear the translation (this is like having a babel fish in your ear!</p>
-<p>*On the Google TV / server, choose a movie to play from the list and start playback.</p>
-<p>The subtitles and TTS will now automatically display on the phone. Enjoy ^_^</p>
-
-<h2>Pairing Website</h2>
-<p>*Notes: this should work like web.airdroid.com</p>
-<p>*<a href="http://www.web.cinesub.co.uk/" target="_blank">http://www.web.cinesub.co.uk/</a></p>
-
-<h2>Development Notes / Docs</h2>
-<p>*Our collaborative realtime text pad: https://pads.ccc.de/3USZIIwI0p</p>
-<p>*Mindmap &#039;Modules&#039;: http://mind42.com/mindmap/55083e03-8e8b-4943-a1ae-8dd97b0574da?rel=urlv</p>
-<p>*Mindmap &#039;Requirements&#039;: http://mind42.com/mindmap/7d55ff0d-faaf-4bee-9403-beccbeb79a1b?rel=url</p>
-<p>*PhoneGap API Docs: http://docs.phonegap.com/en/2.1.0/</p>
-
-<h2>How to Use the app</h2>
-<p>&quot;Start Here&quot;:http://www.cinesub.co.uk/</p>
-<p>Follow Setup Instructions for the Google TV, Tablet, Phone and Watch (all devices on the same wifi network, enable bluetooth for the watch etc)</p>
-<p>Download the CineWebClient and CineWebServer ADKs to the respective device</p>
-<p>Start the CineWebServer on the Google TV</p>
-<p>Start the CineWebClient on the Tablet / Phone</p>
-<p> &#039;Pair&#039; to the TV</p>
-<p>Choose your Desired Subtitle Language {en,es,fr,de,it}</p>
-<p>* Opt-out of TTS (Text to Speech)</p>
-<p>* Wear a single headphone earbud for the babel fish effect during the movie!</p>
-<p>* On the Google TV / server, choose a movie to play from the list and start playback</p>
-<p> The subtitles and TTS will now automatically display on the phone. Enjoy!</p>
-
-<h2>Pairing Website</h2>
-<p>* &quot;Pair Here&quot;:http://web.cinesub.co.uk/</p>
-
-<h2>Development Notes</h2>
-
-<p>* Our collaborative realtime text pad: https://pads.ccc.de/3USZIIwI0p</p>
-<p>* Mindmap &#039;Modules&#039;: http://mind42.com/mindmap/55083e03-8e8b-4943-a1ae-8dd97b0574da?rel=urlv</p>
-<p>* Mindmap &#039;Requirements&#039;: http://mind42.com/mindmap/7d55ff0d-faaf-4bee-9403-beccbeb79a1b?rel=url</p>
-<p>* PhoneGap API Docs: http://docs.phonegap.com/en/2.1.0/</p>
-<p>* Notes: pairing should work like web.airdroid.com</p>
-            </p>
 </body>
 </html>                               
                                     
