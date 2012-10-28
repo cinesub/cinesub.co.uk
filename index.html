@@ -1,19 +1,51 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <title>Cinesub - Accessible movie subtitles with text to speech</title>
+      <link rel="stylesheet" href="css/master.css">
+      <script type="text/javascript" charset="utf-8" src="js/jquery-1.8.2.min.js"></script>     
+      <script type="text/javascript" charset="utf-8">
+	$(document).ready(function(){
+		//some fn
+	});
+      </script>
 </head>
 
 <body>
+<div align="center">
 <pre>
-	      _                       _     
-	     (_)                     | |    
-	  ___ _ _ __   ___  ___ _   _| |__  
-	 / __| | '_ \ / _ \/ __| | | | '_ \ 
-	| (__| | | | |  __/\__ \ |_| | |_) |
-	 \___|_|_| |_|\___||___/\__,_|_.__/ 
-        Accessible subs and audio in-cinema
+          _                       _     
+         (_)                     | |    
+      ___ _ _ __   ___  ___ _   _| |__  
+     / __| | '_ \ / _ \/ __| | | | '_ \ 
+    | (__| | | | |  __/\__ \ |_| | |_) |
+     \___|_|_| |_|\___||___/\__,_|_.__/ 
+Accessible movie subtitles with TTS
+    Langs: {en, fr, de, es, it}
+=========================================
 </pre>
+<div id="buttons">
+		<a href="http://cinesub.co.uk/">
+			<div id="app">
+			</div>
+		</a>
+		<a href="https://github.com/cinesub">
+			<div id="git">
+			</div>
+		</a>   
+		<a href="http://vhackandroid.wikia.com/wiki/CineSub" target="_blank">
+			<div id="wiki">
+			</div>
+		</a>  
+		<a href="https://twitter.com/cinesub" target="_blank">
+			<div id="twitter">
+			</div>
+		</a>
+</div>
 <h1>How to Use the app</h1>
+    <div id="info">
+<a href="#" class="btn large" onclick="scan();">Scan</a>
 <p>Go to: http://www.cinesub.co.uk/</p>
 <p>Download the Client and Server ADK</p>
 <p>Start the Server on the Tv</p>
